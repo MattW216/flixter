@@ -53,4 +53,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Include Bootstrap
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'http://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
