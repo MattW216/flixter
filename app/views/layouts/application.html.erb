@@ -14,13 +14,27 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-toggle-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Flixter</a>
+      <%= link_to 'Flixter', root_path, class: 'navbar-brand' %>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">See all Courses</a>
+            <%= link_to 'See all Courses', '#', class: 'nav-link' %>
           </li>
+        </ul>
+        <ul class="navbar-nav">
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Sign In', new_user_session_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
+            </li>
+          <% end %>
         </ul>
       </div>
     </nav>
@@ -28,7 +42,7 @@
     <% if notice.present? %>
     <p class="alert alert-info"><%= notice %></p>
     <% end %>
-    
+
     <% if alert.present? %>
     <p class="alert alert-danger"><%= alert %></p>
     <% end %>
