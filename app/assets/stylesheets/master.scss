@@ -1,5 +1,3 @@
-@import "bootstrap";
-
 .navbar {
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 200;
@@ -81,6 +79,7 @@ body {
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
   margin: 10px;
+  display: block;
 }
 
 .clr {
