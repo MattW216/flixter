@@ -69,3 +69,9 @@ gem 'figaro'
 
 # Include Fog-AWS
 gem 'fog-aws'
+
+# Include MiniMagick
+gem 'mini_magick'
+
+# Include CarrierWave AWS
+gem 'carrierwave-aws'
