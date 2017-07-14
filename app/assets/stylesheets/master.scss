@@ -61,7 +61,7 @@ body {
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0px #d0d0d0;
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
@@ -84,4 +84,30 @@ body {
 
 .clr {
   clear: both;
+}
+
+.lesson {
+  background-color: #272822;
+  margin-top: 10px;
+  height: 140px;
+  font-size: 15px;
+  box-shadow: 1px 1px 2px 0px #d0d0d0;
+}
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  box-shadow: 1px 1px 2px 0px #d0d0d0;
+  padding: 20px;
+}
+
+.lesson a {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+}
+
+.lesson a b {
+  font-weight: 100px;
+  font-size: 25px;
 }
