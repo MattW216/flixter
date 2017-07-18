@@ -78,3 +78,6 @@ gem 'carrierwave-aws'
 
 # Include Stripe Credit Card Payments
 gem 'stripe'
+
+# Include Ranked Model
+gem 'ranked-model'
