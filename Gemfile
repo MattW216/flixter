@@ -75,3 +75,6 @@ gem 'mini_magick'
 
 # Include CarrierWave AWS
 gem 'carrierwave-aws'
+
+# Include Stripe Credit Card Payments
+gem 'stripe'
