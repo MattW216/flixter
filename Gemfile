@@ -83,3 +83,6 @@ gem 'stripe'
 
 # Include Ranked Model
 gem 'ranked-model'
+
+# Include Font Awesome
+gem 'font-awesome-rails'
