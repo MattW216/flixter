@@ -5,11 +5,19 @@
   <p class="float-left">
     <%= current_lesson.subtitle %>
   </p>
+  <br class="clr" />
+
+  <% if current_lesson.previous_lesson.present? %>
+    <%= link_to lesson_path(current_lesson.previous_lesson), class: 'btn previous-lesson float-left' do %>
+      <span class="fa fa-arrow-left"></span>
+      Previous Lesson &nbsp;
+    <% end %>
+  <% end %>
 
   <% if current_lesson.next_lesson.present? %>
-    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn next-lesson float-right ' do %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn next-lesson float-right' do %>
       Next Lesson &nbsp;
-      <span class="fa fa-forward"></span>
+      <span class="fa fa-arrow-right"></span>
     <% end %>
   <% end %>
 
