@@ -1,9 +1,10 @@
 <br />
 
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box col-10 offset-1 course-font">
   <div class="text-center">
     <h1><%= @course.title %></h1>
     <%= image_tag @course.image, class: 'img-fluid' %>
+    <br class="clr"/>
     <br />
   </div>
 
@@ -45,7 +46,7 @@
       <% end %>
     </div>
 
-    <div class="col-sm-4 col-12">
+    <div class="col-sm-6 col-12">
       <%= @course.description %>
     </div>
   </div>
